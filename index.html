@@ -72,6 +72,7 @@
                 onclick="copySeed(document.getElementById('generated-seed').innerText, this)">Copy</button>
               <button class="resetBtn" onclick="generateSeed()">Generate New</button>
               <button class="resetBtn analyzeSeedBtn" onclick="analyzeSeedFromGenerator()">Analyze Seed</button>
+              <button class="auto" onclick="ang()">A&G</button>
             </div>
           </div>
         </div>
@@ -120,6 +121,12 @@
       analyzerUrl.searchParams.set('seed', seed);
       window.open(analyzerUrl.toString(), '_blank');
     }
+
+   function ANG() {
+    analyzeSeedFromGenerator();
+    generateSeed();
+   }
+   
   </script>
         <div class="seed-card" style="margin-top: 2em; grid-column: 1 / -1;">
         <h2 style="color: #ffd700; font-size: 24px; margin-bottom: 16px;">Balatro Seed Generator Features</h2>
