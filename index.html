@@ -4,14 +4,14 @@
   <title>Balatro Seed Generator - Random Seeds & Popular Balatro Seeds</title>
   <link rel="stylesheet" href="https://balatrocalc.com/style.css">
   <meta name="description"
-    content="Free Balatro seed generator with random seed creation and curated collection of popular Balatro seeds. Find seeds for specific jokers like Blueprint and DNA.">
-  <link rel="canonical" href="">
+    content="Free Balatro seed generator">
+  <link rel="canonical" href="index.html">
   </head>
 <body>
   <canvas id="backgroundCanvas"></canvas>
   <div id="titleBar">
-    <h1>Balatro Seed Generator</h1>
-    <span class="subtitle">Random Seeds & Database</span>
+    <h1>Vagabond</h1>
+    <span class="subtitle">Random Seeds</span>
   </div>
   <nav id="topNav">
     <!--<a href="/" class="nav-link">calculator</a>
@@ -19,7 +19,7 @@
     <a href="/balatro-save-editor.html" class="nav-link nav-link--proper-case">Balatro Save Editor</a>
     <a href="https://printabc.co/balatro-calendar-generator/" class="nav-link" target="_blank" rel="noopener">balatro calendar generator</a>
    -->
-    <a href="https://www.playbalatro.com/" target="_blank" class="nav-link">apk</a>
+    <a href="https://www.playbalatro.com/" target="_blank" class="nav-link">Get the Game!</a>
     <a href="https://x.com/LocalThunk" target="_blank" class="nav-link">localthunk</a>
     <div class="language-switcher">
       <select id="langSelect" onchange="switchLanguage()">
@@ -207,6 +207,11 @@
 
     .seed-actions .analyzeSeedBtn {
       grid-column: 1 / -1;
+      justify-self: center;
+    }
+
+    .seed-actions .auto {
+      grid-colum: 2 / -1;
       justify-self: center;
     }
 
